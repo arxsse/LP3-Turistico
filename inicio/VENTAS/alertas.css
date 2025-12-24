@@ -1,0 +1,9 @@
+/* Copia de alertas para el módulo VENTAS */
+.alerta { position: fixed; top: 20px; right: 20px; padding: 15px 20px; border-radius: 8px; color: white; font-weight: 500; z-index: 9999; max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display:flex; align-items:center; justify-content:space-between; opacity:0; transform:translateY(-100%); transition: all 0.3s ease; }
+.alerta-info { background-color:#007bff; border-left:4px solid #0056b3; }
+.alerta-success { background-color:#28a745; border-left:4px solid #1e7e34; }
+.alerta-warning { background-color:#ffc107; border-left:4px solid #e0a800; color:#212529; }
+.alerta-error { background-color:#dc3545; border-left:4px solid #c82333; }
+.cerrar-alerta { background:none; border:none; color:inherit; font-size:18px; cursor:pointer; margin-left:10px; padding:0; width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:50%; transition:background-color 0.2s ease; }
+.cerrar-alerta:hover { background-color: rgba(255,255,255,0.2); }
+@media (max-width:768px) { .alerta { top:10px; right:10px; left:10px; max-width:none; } }
